@@ -315,7 +315,7 @@ Tables: `sitios`, `households`, `residents`, `cedulas`, `accounts`, `appropriati
   1. Clone the repo.
   2. Run `npm ci` in both folders, then `npm run build` in `client/`.
   3. Create `server/.env` with `HOST=127.0.0.1`.
-- [ ] Run as services with NSSM (auto-start, restart on crash):
+- [ ] Run as services with NSSM (auto-start, restart on crash). `server/scripts/install-service.ps1` sets up `brgy-app` (tested on the dev laptop):
   - `brgy-app`: `node --env-file=.env index.js`, app directory `server\`
   - `caddy`: `caddy run --config C:\caddy\Caddyfile`, env `XDG_DATA_HOME=C:\caddy\data`
 - [ ] Start `brgy-app` once to create the tables, then run `node scripts/create-admin.js`.

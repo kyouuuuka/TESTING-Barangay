@@ -2,6 +2,7 @@ node_modules/
 dist/
 .env
 server/uploads/
+server/logs/
 server/scripts/out/
 *.dbf
 *.DBF
